@@ -13,11 +13,11 @@ $jsonout = '';
 
 if (!empty($phone)) {
 
-	$to = 'khripunovpp@gmail.com, khripunovpp@mail.ru';
-	$subject = 'Мезо ЗАЯВКА';
+	$to = 'khripunovpp@gmail.com, khripunovpp@mail.ru, info@bon-l.ru, info@lymmed.ru';
+	$subject = 'Мезо Акция ЗАЯВКА';
 	$headers  = 'MIME-Version: 1.0' . "\r\n";
 	$headers .= 'Content-type: text/html; utf-8' . "\r\n";
-	$headers .= 'From: svvs <no-reply@labprestige.com>' . "\r\n";
+	$headers .= 'From: Bon-l <info@bon-l.ru>' . "\r\n";
 	$message = "<table>";
 	$message .= "<tr><td><b>Имя</b></td><td>$name</td></tr>";
 	$message .= "<tr><td><b>Контактный телефон</b></td><td>$phone</td></tr>";
@@ -40,7 +40,7 @@ if (!empty($phone)) {
 
 } else {
 
-	$jsonout = '{"status": "error", "message": "Ошибка"}';
+	$jsonout = '{"status": "error", "message": "Без телефона мы не сможем связаться с вами."}';
 	
 }
 

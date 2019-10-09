@@ -168,10 +168,9 @@ var Shop = {
     _renderFilter: function(category) {
         var _t = this;
 
-        var filterContainer = $('.filter'),
-            filtersButtons = document.createDocumentFragment();
+        var filterContainer = $('.filter');
 
-        filtersButtons.append(_createButton(category));
+        filterContainer.append(_createButton(category));
 
         function _createButton(type) {
             var filterBut = document.createElement('button');
@@ -180,7 +179,6 @@ var Shop = {
             return filterBut;
         }
 
-        filterContainer.append(filtersButtons);
         filterContainer.children().first().addClass('active');
     },
     filterItems: function(type) {
@@ -194,7 +192,7 @@ var Shop = {
 
         productData = JSON.parse(productCard.attr('data-data'));
 
-        productCard.addClass('added').find('.product__add').text("В корзине").addClass('js-to-basket');
+        productCard.addClass('added').find('.product__add, .card__add').text("В корзине").addClass('js-to-basket');
 
         var item = {
             id: productData.id,
@@ -244,6 +242,7 @@ var Shop = {
         var totalPrice = 0;
 
         $('.product').removeClass('added')
+        $('.card__add, .product__add').text('Добавить в корзину').removeClass('js-to-basket')
 
         var list = $('.order__list'),
             orderField = $('[name="order"]');
@@ -259,6 +258,7 @@ var Shop = {
         basket.map(function(item) {
             var elem = $('[data-id="' + item.id + '"]');
             elem.addClass('added').find('.product__add').text("В корзине").addClass('js-to-basket');
+            $('.card__add').text("В корзине").addClass('js-to-basket');
             elem.find('[name="quantity"]').val(item.quantity);
             renderBasketItem(item);
         })
@@ -290,7 +290,7 @@ var Shop = {
         renderPopupInfo(product, img, added, function() {
             _t.popup.fadeIn(100);
             $('body').addClass('fxdBody');
-        }, )
+        })
 
         function renderPopupInfo(product, img, added, cb) {
 
@@ -302,7 +302,7 @@ var Shop = {
             $('.card__price').text(product.price + ',00 р.');
             $('.card__contains').html(product.contains);
             $('.card__tail').html(product.content);
-            $('.card__add').attr('data-id', product.id);
+            $('.card__add').attr('data-id', product.id).text('Добавить в корзину').removeClass('js-to-basket');
 
             if (added) {
                 $('.card').addClass('added');

@@ -77,6 +77,9 @@ select
 .container
 	@extend %container
 
+.w-page
+	overflow: hidden
+
 .hero
 	background-image: url(../img/hero-bg.jpg)
 	background-size: cover
@@ -137,7 +140,7 @@ select
 		width: 50%
 		padding-right: 70px
 		color: #fff
-		&::after
+		&::before
 			content: ''
 			position: absolute
 			z-index: -1
@@ -146,7 +149,7 @@ select
 			width: 100%
 			height: 100%
 			background-color: rgba(19,18,18,0.71)
-		&::before
+		&::after
 			content: ''
 			position: absolute
 			bottom: 30px
@@ -449,6 +452,7 @@ select
 	&__container
 		vertical-align: middle	
 		position: relative
+		padding: 15px
 	&__inner
 		max-width: 870px
 		margin: 0 auto
@@ -523,6 +527,9 @@ select
 			background-color: #762687
 	&__tail
 		padding-top: 50px
+		li
+			list-style-type: disc
+			list-style-position: inside
 
 //ALWAYS END
 @import "media"
