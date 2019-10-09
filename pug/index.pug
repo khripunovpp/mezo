@@ -48,17 +48,19 @@ html
 						.case__list
 			section.forms
 				.container
+					p.forms__response
 					.forms__inner
 						.forms__item
-							form(action="", ).form#callback
+							form(action="", method="post").form#callback
 								p.form__title  Оставить заявку для обратного звонка:
 								.form__group
 									input(type="text", name="name", placeholder="Имя *", required)
 								.form__group
 									input(type="tel", name="phone", placeholder="Телефон *", required)
+								input(type="hidden", name="form", value="callback")
 								button.form__submit Отправить
 						.forms__item
-							form(action="", ).form#order
+							form(action="", method="post").form#order
 								p.form__title Оформить заказ:
 								.form__group
 									input(type="text", name="name", placeholder="Имя *", required)
@@ -69,6 +71,8 @@ html
 								.form__group
 									input(type="text", name="city", placeholder="Город")
 								input(type="hidden", name="order")
+								input(type="hidden", name="form", value="order")
+								input(type="hidden", name="total")
 								.form__order
 									.order
 										p.order__empty В заказе пусто
@@ -77,8 +81,8 @@ html
 											p.order__item MESO-F Hair Cocktail x6
 												button.order__delete Удалить
 										.order__total Цена: 
-											span.js-total 15 000
-											|  р.
+											span.js-total 
+											| ,00 р.
 								button.form__submit Отправить
 			footer.footer
 				.container
@@ -86,6 +90,26 @@ html
 					a(href="tel: 8 (495) 927-0-729") 8 (495) 927-0-729
 					a(href="https://www.instagram.com/lymmedrus/") @lymmedrus
 
+			aside.popup
+				table.popup__wrapper
+					tr
+						td.popup__container
+							.popup__inner
+								button.popup__close
+									svg(width='61px', height='61px', viewBox='0 0 61 61', version='1.1', xmlns:xlink='http://www.w3.org/1999/xlink', xmlns='http://www.w3.org/2000/svg')
+										g#Group(transform='matrix(0.7071066 0.7071069 -0.7071069 0.7071066 30.11523 0.7070313)')
+											path#Path-3(d='M0.5 0L0.5 41.5894', transform='translate(20.29492 -0.0001220703)', fill='none', stroke='#979797', stroke-width='1')
+											path#Path-3(d='M0.5 0L0.5 41.5894', transform='matrix(-1.421085E-14 0.9999999 -0.9999999 -1.421085E-14 41.58936 20.29443)', fill='none', stroke='#979797', stroke-width='1')
+								.popup__card.card
+									.card__pic
+										img(src="", alt="")
+									.card__info
+										p.card__name
+										p.card__value
+										p.card__price
+										.card__contains
+										button.card__add Добавить в корзину
+									.card__tail
 
 		script(src="js/isotope.pkgd.min.js")
 		script(src="js/common.js")

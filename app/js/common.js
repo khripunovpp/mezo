@@ -95,8 +95,9 @@ var Shop = {
         });
 
         _t.basket = $('.order');
+        _t.popup = $('.popup');
 
-        $('body').on('click', '.product:not(.added) .product__add', function(e) {
+        $('body').on('click', '.product:not(.added) .product__add, .card:not(.added) .card__add', function(e) {
             _t._add.call(_t, e);
         })
 
@@ -105,11 +106,27 @@ var Shop = {
         });
 
         $('body').on('click', '.js-to-basket', function(e) {
-            Util.scrollToEl($('#order'))
+            _t._closePopup.call(_t, e);
+            Util.scrollToEl($('#order'));
         });
 
         $('body').on('click', '.js-to-callback', function(e) {
-            Util.scrollToEl($('#callback'))
+            Util.scrollToEl($('#callback'));
+        });
+
+        $('body').on('click', '.product__pic', function(e) {
+            e.preventDefault();
+            _t._openPopup.call(_t, e);
+        });
+
+        $('body').on('click', '.popup__close', function(e) {
+            e.preventDefault();
+            _t._closePopup.call(_t, e);
+        });
+
+        $('body').on('click', '.form__submit', function(e) {
+            e.preventDefault();
+            _t._submit.call(_t, e);
         });
 
     },
@@ -132,7 +149,7 @@ var Shop = {
             el['category'] = category;
 
             var productCase = $('<div>').addClass('case__item product ' + Util.slugify(Util.translit(category))).attr('data-data', JSON.stringify(el)).attr('data-id', el.id),
-                productPic = $('<div>').addClass('product__pic').append($('<img>').attr('src', el.pic)),
+                productPic = $('<a href="#">').addClass('product__pic').append($('<img>').attr('src', el.pic)),
                 productName = $('<p>').addClass('product__name').text(el.name),
                 productValue = $('<p>').addClass('product__value').text(el.value),
                 productPrice = $('<p>').addClass('product__price').text(el.price + ",00 р."),
@@ -173,7 +190,7 @@ var Shop = {
     _add: function(event) {
         var _t = this;
 
-        var productCard = $(event.target).closest('.product');
+        var productCard = $(event.target).closest('.product, .card');
 
         productData = JSON.parse(productCard.attr('data-data'));
 
@@ -181,7 +198,7 @@ var Shop = {
 
         var item = {
             id: productData.id,
-            quantity: productCard.find('[name="quantity"]').val(),
+            quantity: productCard.find('[name="quantity"]').val() || "1",
             name: productData.name,
             price: productData.price,
         };
@@ -203,12 +220,37 @@ var Shop = {
     _getBasket: function() {
         return JSON.parse(localStorage.getItem('basket')) || []
     },
+    _removeItem: function(event) {
+        var _t = this
+
+        var id = $(event.target).closest('.order__delete').attr('data-delete-id');
+
+        var basket = _t._getBasket(),
+            basketFinal = [];
+
+        basket.map(function(elem, i) {
+            if (String(elem.id) !== id) basketFinal.push(elem)
+        })
+
+        $(event.target).closest('.order__item').fadeOut()
+
+        localStorage.setItem('basket', JSON.stringify(basketFinal));
+
+        _t._update()
+    },
     _update: function() {
         var _t = this;
 
         var totalPrice = 0;
 
-        var list = $('.order__list')
+        $('.product').removeClass('added')
+
+        var list = $('.order__list'),
+            orderField = $('[name="order"]');
+
+        orderField.val('')
+
+        _t.orderString = orderField.val();
 
         list.html('');
 
@@ -224,17 +266,107 @@ var Shop = {
         basket.length <= 0 ? _t.basket.addClass('empty') : _t.basket.removeClass('empty')
 
         $('.js-total').text(totalPrice)
+        $('[name="total"]').val(totalPrice)
 
         function renderBasketItem(elem) {
-            
-            var productString = elem.name+' x'+elem.quantity;
-            var prodItem = $('<p>').addClass('order__item').text(productString).append($('<button>').addClass('order__delete').text('Удалить'))
+
+            var productString = elem.name + ' x' + elem.quantity;
+            var prodItem = $('<p>').addClass('order__item').text(productString).append($('<button data-delete-id="' + elem.id + '">').addClass('order__delete').text('Удалить'))
 
             totalPrice += Number(elem.quantity * elem.price)
 
             list.append(prodItem)
+            _t.orderString += _t.orderString ? ', ' + productString : productString
+            $('[name="order"]').val(_t.orderString)
         }
     },
+    _openPopup: function(e) {
+        var _t = this,
+            target = $(e.target).closest('.product'),
+            product = productData = JSON.parse(target.attr('data-data')),
+            img = target.find('.product__pic img').clone(),
+            added = $(target).hasClass('added');
+
+        renderPopupInfo(product, img, added, function() {
+            _t.popup.fadeIn(100);
+            $('body').addClass('fxdBody');
+        }, )
+
+        function renderPopupInfo(product, img, added, cb) {
+
+            $('.card').attr('data-data', JSON.stringify(product)).removeClass('added');
+            $('.card__pic').html(img);
+            $('.card__name').text(product.name);
+            $('.card__subname').text(product.subname);
+            $('.card__value').text(product.value);
+            $('.card__price').text(product.price + ',00 р.');
+            $('.card__contains').html(product.contains);
+            $('.card__tail').html(product.content);
+            $('.card__add').attr('data-id', product.id);
+
+            if (added) {
+                $('.card').addClass('added');
+                $('.card__add').text('В корзине').addClass('js-to-basket');
+            }
+
+            cb();
+        }
+
+    },
+    _closePopup: function() {
+        var _t = this;
+        _t.popup.fadeOut(100);
+        $('body').removeClass('fxdBody');
+    },
+    _submit: function(e) {
+        var _t = this;
+        var basket = _t._getBasket();
+        var formId = $(e.target).closest('form').attr('id');
+
+        if (formId === 'order') {
+
+            basket.length > 0 && ajax($('#order'))
+        } else {
+            ajax($('#callback'))
+        }
+
+    },
+    _clearBasket: function() {
+        var _t = this
+        localStorage.setItem('basket', null);
+
+        _t._update()
+    },
+}
+
+var ajax = function(form) {
+
+    var formtarget = form,
+        data = $(formtarget).serialize(),
+        jqxhr = $.post("./ajax.php", data, onAjaxSuccess);
+
+    function onAjaxSuccess(data) {
+
+        var json = JSON.parse(data),
+            status = json.status,
+            message = json.message;
+
+        if (status === 'success') {
+            $('input, textarea, button[type=submit]').each(function() {
+                $(this).prop("disabled", "true");
+            });
+        }
+
+        addNotify(status, message)
+    }
+
+    var addNotify = function(status, msg, form) {
+        var responseEl = $('.forms__response').removeClass('success error').addClass(status).text(msg);
+
+        responseEl.slideDown();
+
+        status === 'success' && Shop._clearBasket();
+    }
 }
 
 $(function() {

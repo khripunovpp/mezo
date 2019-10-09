@@ -30,6 +30,8 @@ body
 	background-color: #fff
 	text-size-adjust: 100%
 	-webkit-tap-highlight-color: transparent
+	&.fxdBody
+		overflow: hidden
 
 img
 	max-width: 100%	
@@ -267,6 +269,7 @@ select
 		background-color: #fff
 		border-radius: 2px
 		margin-bottom: 10px
+		display: block
 		img
 			object-fit: scale-down
 			height: 100%
@@ -325,6 +328,22 @@ select
 	&__item
 		width: 50%	
 		margin: 0 20px
+	&__response
+		display: none
+		text-align: center
+		font-size: 18px
+		line-height: 1.2
+		margin: 0
+		padding: 15px
+		border: 1px solid transparent
+		&.error
+			border-color: #ff0000
+			color: #d42121
+			background-color: rgba(#d42121, .1)
+		&.success
+			border-color: #2ba32b
+			color: #2ba32b
+			background-color: rgba(#2ba32b, .1)
 
 .form
 	&__title
@@ -409,6 +428,101 @@ select
 		cursor: pointer
 		&:hover
 			color: #ff0000
+
+
+
+.popup
+	position: fixed
+	z-index: 5
+	height: 100%
+	width: 100%
+	overflow: auto
+	top: 0
+	left: 0
+	background-color: rgba(255,255,255,.9)
+	display: none
+	&__wrapper
+		height: 100%
+		width: 100%
+		padding: 15px
+		border-collapse: collapse
+	&__container
+		vertical-align: middle	
+		position: relative
+	&__inner
+		max-width: 870px
+		margin: 0 auto
+		box-shadow: 0px 0px 6px 2px rgba(0,0,0,0.08)
+		background-color: #fff
+		border: solid 1px #e2e2e2
+		border-radius: 2px
+		padding: 30px 100px
+		position: relative
+	&__close
+		padding: 0
+		border: none
+		background-color: transparent
+		transition: all .2s
+		cursor: pointer
+		position: absolute
+		top: 15px
+		right: 15px
+		&:hover
+			transform: scale(1.2)
+
+.card
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	flex-wrap: wrap
+	font-size: 16px
+	line-height: 21px
+	color: #242424
+	letter-spacing: 0.3333333px
+	&.added
+		.card__add
+			background-color: #762687
+	&__tail
+		width: 100%
+	&__pic
+		width: 200px
+		height: 250px
+		text-align: center
+		img
+			height: 100%
+			object-fit: scale-down
+			object-position: top
+	&__info
+		padding-left: 50px
+		width: calc(100% - 200px)
+	&__name
+		margin: 0
+	&__value
+		margin: 0 0 10px
+	&__price
+		margin: 0 0 30px
+	&__contains
+		p 
+			margin: 0
+	&__add
+		margin-top: 30px
+		font-size: 16px
+		line-height: 21px
+		letter-spacing: 0.3333333px
+		color: #fff
+		border-radius: 2px
+		background-color: #013403
+		border: none
+		width: 100%
+		padding: 12px
+		cursor: pointer
+		max-width: 220px
+		&:hover
+			background-color: #762687
+	&__tail
+		padding-top: 50px
 
 //ALWAYS END
 @import "media"

@@ -58,9 +58,10 @@
       </section>
       <section class="forms">
         <div class="container">
+          <p class="forms__response"></p>
           <div class="forms__inner">
             <div class="forms__item">
-              <form class="form" action="" id="callback">
+              <form class="form" action="" method="post" id="callback">
                 <p class="form__title"> Оставить заявку для обратного звонка:</p>
                 <div class="form__group">
                   <input type="text" name="name" placeholder="Имя *" required>
@@ -68,11 +69,12 @@
                 <div class="form__group">
                   <input type="tel" name="phone" placeholder="Телефон *" required>
                 </div>
+                <input type="hidden" name="form" value="callback">
                 <button class="form__submit">Отправить</button>
               </form>
             </div>
             <div class="forms__item">
-              <form class="form" action="" id="order">
+              <form class="form" action="" method="post" id="order">
                 <p class="form__title">Оформить заказ:</p>
                 <div class="form__group">
                   <input type="text" name="name" placeholder="Имя *" required>
@@ -87,6 +89,8 @@
                   <input type="text" name="city" placeholder="Город">
                 </div>
                 <input type="hidden" name="order">
+                <input type="hidden" name="form" value="order">
+                <input type="hidden" name="total">
                 <div class="form__order">
                   <div class="order">
                     <p class="order__empty">В заказе пусто</p>
@@ -96,7 +100,7 @@
                         <button class="order__delete">Удалить</button>
                       </p>
                     </div>
-                    <div class="order__total">Цена: <span class="js-total">15 000</span> р.</div>
+                    <div class="order__total">Цена: <span class="js-total"> </span>,00 р.</div>
                   </div>
                 </div>
                 <button class="form__submit">Отправить</button>
@@ -108,6 +112,35 @@
       <footer class="footer">
         <div class="container"><a href="mailto: info@bon-l.ru">info@bon-l.ru</a><a href="tel: 8 (495) 927-0-729">8 (495) 927-0-729</a><a href="https://www.instagram.com/lymmedrus/">@lymmedrus</a></div>
       </footer>
+      <aside class="popup">
+        <table class="popup__wrapper">
+          <tr>
+            <td class="popup__container">
+              <div class="popup__inner">
+                <button class="popup__close">
+                  <svg width="61px" height="61px" viewBox="0 0 61 61" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+                    <g id="Group" transform="matrix(0.7071066 0.7071069 -0.7071069 0.7071066 30.11523 0.7070313)">
+                      <path id="Path-3" d="M0.5 0L0.5 41.5894" transform="translate(20.29492 -0.0001220703)" fill="none" stroke="#979797" stroke-width="1"></path>
+                      <path id="Path-3" d="M0.5 0L0.5 41.5894" transform="matrix(-1.421085E-14 0.9999999 -0.9999999 -1.421085E-14 41.58936 20.29443)" fill="none" stroke="#979797" stroke-width="1"></path>
+                    </g>
+                  </svg>
+                </button>
+                <div class="popup__card card">
+                  <div class="card__pic"><img src="" alt=""></div>
+                  <div class="card__info">
+                    <p class="card__name"></p>
+                    <p class="card__value"></p>
+                    <p class="card__price"></p>
+                    <div class="card__contains"></div>
+                    <button class="card__add">Добавить в корзину</button>
+                  </div>
+                  <div class="card__tail"></div>
+                </div>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </aside>
     </div>
     <script src="js/isotope.pkgd.min.js"></script>
     <script src="js/common.js"></script>

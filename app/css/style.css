@@ -54,6 +54,10 @@ body {
   -webkit-tap-highlight-color: transparent;
 }
 
+body.fxdBody {
+  overflow: hidden;
+}
+
 img {
   max-width: 100%;
   border: none;
@@ -360,6 +364,7 @@ select {
   background-color: #fff;
   border-radius: 2px;
   margin-bottom: 10px;
+  display: block;
 }
 
 .product__pic img {
@@ -453,6 +458,28 @@ select {
 .forms__item {
   width: 50%;
   margin: 0 20px;
+}
+
+.forms__response {
+  display: none;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.2;
+  margin: 0;
+  padding: 15px;
+  border: 1px solid transparent;
+}
+
+.forms__response.error {
+  border-color: #ff0000;
+  color: #d42121;
+  background-color: rgba(212, 33, 33, 0.1);
+}
+
+.forms__response.success {
+  border-color: #2ba32b;
+  color: #2ba32b;
+  background-color: rgba(43, 163, 43, 0.1);
 }
 
 .form__title {
@@ -567,6 +594,145 @@ select {
 
 .order__delete:hover {
   color: #ff0000;
+}
+
+.popup {
+  position: fixed;
+  z-index: 5;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.9);
+  display: none;
+}
+
+.popup__wrapper {
+  height: 100%;
+  width: 100%;
+  padding: 15px;
+  border-collapse: collapse;
+}
+
+.popup__container {
+  vertical-align: middle;
+  position: relative;
+}
+
+.popup__inner {
+  max-width: 870px;
+  margin: 0 auto;
+  -webkit-box-shadow: 0px 0px 6px 2px rgba(0, 0, 0, 0.08);
+  box-shadow: 0px 0px 6px 2px rgba(0, 0, 0, 0.08);
+  background-color: #fff;
+  border: solid 1px #e2e2e2;
+  border-radius: 2px;
+  padding: 30px 100px;
+  position: relative;
+}
+
+.popup__close {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  -webkit-transition: all .2s;
+  -o-transition: all .2s;
+  transition: all .2s;
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.popup__close:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.card {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  font-size: 16px;
+  line-height: 21px;
+  color: #242424;
+  letter-spacing: 0.3333333px;
+}
+
+.card.added .card__add {
+  background-color: #762687;
+}
+
+.card__tail {
+  width: 100%;
+}
+
+.card__pic {
+  width: 200px;
+  height: 250px;
+  text-align: center;
+}
+
+.card__pic img {
+  height: 100%;
+  -o-object-fit: scale-down;
+  object-fit: scale-down;
+  -o-object-position: top;
+  object-position: top;
+}
+
+.card__info {
+  padding-left: 50px;
+  width: -webkit-calc(100% - 200px);
+  width: calc(100% - 200px);
+}
+
+.card__name {
+  margin: 0;
+}
+
+.card__value {
+  margin: 0 0 10px;
+}
+
+.card__price {
+  margin: 0 0 30px;
+}
+
+.card__contains p {
+  margin: 0;
+}
+
+.card__add {
+  margin-top: 30px;
+  font-size: 16px;
+  line-height: 21px;
+  letter-spacing: 0.3333333px;
+  color: #fff;
+  border-radius: 2px;
+  background-color: #013403;
+  border: none;
+  width: 100%;
+  padding: 12px;
+  cursor: pointer;
+  max-width: 220px;
+}
+
+.card__add:hover {
+  background-color: #762687;
+}
+
+.card__tail {
+  padding-top: 50px;
 }
 
 /* Desktop-frist */

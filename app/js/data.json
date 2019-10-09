@@ -9,22 +9,20 @@
             "pic": "img/product.jpg",
             "value": "6ml",
             "price": 900,
-            "contains": "гиалуроновая кислота",
-            "effects": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio laboriosam quaerat animi reprehenderit debitis facere.",
-            "content": "dvZSD"
+            "contains": "<p>Состав: гиалуроновая кислота, биосинтетическая, немодифицированная</p><p>Концентрация: 32 мг/мл</p>",
+            "content": "<p><b>Эффекты:</b></p><p>Идеален для достижения лифтингового эффекта в нижней трети лица</p><ul> <li>Мощный лифтинг средней и нижней трети лица </li><li>Уменьшение дряблости проблемных участков (субментального, губоподбородочного) </li><li>Уменьшение пастозности</li><li>Повышение тонуса, плотности кожи </li><li>Уменьшение выраженности морщин </li><li>Улучшение кровоснабжения обрабатываемой зоны </li></ul><p>Рекомендовано сочетанное с применение с Slim Cocktail (в cсоответствующем разведении и на требуемую глубину) с целью липоредукции в обрабатываемой зоне:</p><ul> <li>Уменьшение объема ЛЖО</li><li>Появление четкости овала</li></ul>"
         },
         {
             "id": 745,
             "name": "Sorata Derma Activ Edfvdf",
-            "pic": "img/product.jpg",
+            "pic": "img/product-2.jpg",
             "value": "6ml",
-            "price": 900,
+            "price": 180,
             "contains": "гиалуроновая кислота",
-            "effects": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio laboriosam quaerat animi reprehenderit debitis facere.",
-            "content": "dvZSD"
+            "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio laboriosam quaerat animi reprehenderit debitis facere."
         }]
     },
-     {
+    {
         "category": "Мезотерапия",
         "products": [
         {
@@ -32,23 +30,21 @@
             "name": "Sorata Derma Activ fvdfvfdv",
             "pic": "img/product.jpg",
             "value": "6ml",
-            "price": 900,
+            "price": 5400,
             "contains": "гиалуроновая кислота",
-            "effects": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio laboriosam quaerat animi reprehenderit debitis facere.",
-            "content": "dvZSD"
+            "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio laboriosam quaerat animi reprehenderit debitis facere."
         },
         {
             "id": 342,
             "name": "Sorata Derma fbdfbActiv E",
             "pic": "img/product.jpg",
             "value": "6ml",
-            "price": 900,
+            "price": 911100,
             "contains": "гиалуроновая кислота",
-            "effects": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio laboriosam quaerat animi reprehenderit debitis facere.",
-            "content": "dvZSD"
+            "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio laboriosam quaerat animi reprehenderit debitis facere."
         }]
     },
-     {
+    {
         "category": "Пептиды",
         "products": [
         {
@@ -56,20 +52,18 @@
             "name": "Sorata Defnfgnrma Activ E",
             "pic": "img/product.jpg",
             "value": "6ml",
-            "price": 900,
+            "price": 5165,
             "contains": "гиалуроновая кислота",
-            "effects": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio laboriosam quaerat animi reprehenderit debitis facere.",
-            "content": "dvZSD"
+            "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio laboriosam quaerat animi reprehenderit debitis facere."
         },
         {
             "id": 23123,
             "name": "Soratagnfgng Derma Activ E",
             "pic": "img/product.jpg",
             "value": "6ml",
-            "price": 900,
+            "price": 89,
             "contains": "гиалуроновая кислота",
-            "effects": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio laboriosam quaerat animi reprehenderit debitis facere.",
-            "content": "dvZSD"
+            "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio laboriosam quaerat animi reprehenderit debitis facere."
         }]
     }]
 }
