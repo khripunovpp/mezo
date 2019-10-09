@@ -4,20 +4,146 @@
         "category": "Биоревитализация",
         "products": [
         {
-            "id": 946,
-            "name": "Sorata Derma Activ Evdfv",
-            "pic": "img/product.jpg",
-            "value": "6ml",
-            "price": 900,
-            "contains": "<p>Состав: гиалуроновая кислота, биосинтетическая, немодифицированная</p><p>Концентрация: 32 мг/мл</p>",
-            "content": "<p><b>Эффекты:</b></p><p>Идеален для достижения лифтингового эффекта в нижней трети лица</p><ul> <li>Мощный лифтинг средней и нижней трети лица </li><li>Уменьшение дряблости проблемных участков (субментального, губоподбородочного) </li><li>Уменьшение пастозности</li><li>Повышение тонуса, плотности кожи </li><li>Уменьшение выраженности морщин </li><li>Улучшение кровоснабжения обрабатываемой зоны </li></ul><p>Рекомендовано сочетанное с применение с Slim Cocktail (в cсоответствующем разведении и на требуемую глубину) с целью липоредукции в обрабатываемой зоне:</p><ul> <li>Уменьшение объема ЛЖО</li><li>Появление четкости овала</li></ul>"
+            "id": 1,
+            "name": "Sonata HA 1.8-perfect ",
+            "pic": "img/Sonata-HA-1.8-perfect-1.6ml.jpg",
+            "value": "1.6 ml",
+            "price": 1200,
+            "contains": "<p>Основные ингредиенты: гиалуронат натрия с концентрацией 18мг/мл. </p>",
+            "content": "<p>Гиалуроновая кислота* с молекулярным весом 1700kDa. Активный препарат воссоздает жизненный потенциал клеток кожи и оказывает яркое омолаживающее действие. Рекомендуется для подготовки и реабилитации после использования активных аппаратных методов омоложения, пластических операций, глубоких и срединных пилингов. </p><p><b>Результат:</b> </p><p>Увлажнение и лифтинг. </p><p><b>Форма выпуска:</b> </p><p>Одноразовый шприц 1.6мл. </p><p>* стерильная апирогенная нестабилизированная гиалуроновая кислота.</p>"
         },
         {
-            "id": 745,
-            "name": "Sorata Derma Activ Edfvdf",
+            "id": 2,
+            "name": "Sonata HA 2.7-perfect ",
+            "pic": "img/Sonata-HA-2.7-perfect-1.6ml.jpg",
+            "value": "1.6 ml",
+            "price": 1300,
+            "contains": "<p>Основные ингредиенты: гиалуронат натрия с концентрацией 27мг/мл. </p>",
+            "content": "<p>Гиалуроновая кислота* с молекулярным весом 2500 kDa, Препарат превосходно восстанавливает тургор дермы. Благодаря стимуляции синтеза неоколлагеновых волокон придает коже упругость и гладкость. Так же предназначен для омоложения области тыла кистей рук, предплечья и внутренней поверхности плеча. </p><p><b>Результат:</b> </p><p>Уплотнение и повышение тонуса кожи; уменьшение глубины выраженных дермальных линий, удаление мелких морщин; сужение пор; выравнивание цвета лица и кожи рук. </p><p><b>Форма выпуска:</b> </p><p>Одноразовый шприц 1.6мл. </p><p>* стерильная апирогенная нестабилизированная гиалуроновая кислота.</p>"
+        },
+        {
+            "id": 3,
+            "name": "Sonata HA 3.6-perfect",
+            "pic": "img/Sonata-HA-3.6-perfect-1.6ml.jpg",
+            "value": "1.6 ml",
+            "price": 1500,
+            "contains": "<p>Основные ингредиенты: гиалуронат натрия с концентрацией 36мг/мл. </p>",
+            "content": "<p>Гиалуроноваякислота* с молекулярным весом 3100 kDa. В основном используется для дряблых областей возрастной кожи лица. Сглаживает рельеф крупных дермолиний. Восстанавливает утраченные объемы (участок красной каймыгуб, кожные покровынад и под скуловым участком). Может использоваться в качестве «временного филлера для «показательного эффекта губы, носогубные складки. «Продлевает жизнь введенному ранее филлеру(актуально для носогубных складок). </p><p><b>Результат:</b> </p><p>Купирование птоза кожных покровов, устранение избытка кожного лоскута на деликатных участках.</p><p><b>Форма выпуска:</b> </p><p>Одноразовый шприц 1.6мл. </p><p>* стерильная апирогенная нестабилизированная гиалуроновая кислота.</p>"
+        },
+        {
+            "id": 4,
+            "name": "MESO-F HyalSoft 1.2%",
             "pic": "img/product-2.jpg",
-            "value": "6ml",
-            "price": 180,
+            "value": "1.4ml",
+            "price": 1000,
+            "contains": "гиалуроновая кислота",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio laboriosam quaerat animi reprehenderit debitis facere."
+        },
+        {
+            "id": 5,
+            "name": "MESO-F HyalSoft Plus 1.8%",
+            "pic": "img/product-2.jpg",
+            "value": "1.4 ml",
+            "price": 1050,
+            "contains": "гиалуроновая кислота",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio laboriosam quaerat animi reprehenderit debitis facere."
+        },
+        {
+            "id": 6,
+            "name": "MESO-F HyalMed 2.6%",
+            "pic": "img/product-2.jpg",
+            "value": "1.4 ml",
+            "price": 1100,
+            "contains": "гиалуроновая кислота",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio laboriosam quaerat animi reprehenderit debitis facere."
+        },
+        {
+            "id": 7,
+            "name": "MESO-F HyalDeep 3.2%",
+            "pic": "img/product-2.jpg",
+            "value": "1.4 ml",
+            "price": 1150,
+            "contains": "гиалуроновая кислота",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio laboriosam quaerat animi reprehenderit debitis facere."
+        },
+        {
+            "id": 8,
+            "name": "MESO-F HyalSoft 1.2%",
+            "pic": "img/MESO-F-HyalSoft-1.2-3ml.jpg",
+            "value": "3 ml",
+            "price": 1200,
+            "contains": "гиалуроновая кислота",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio laboriosam quaerat animi reprehenderit debitis facere."
+        },
+        {
+            "id": 9,
+            "name": "MESO-F HyalSoft Plus 1.8%",
+            "pic": "img/MESO-F-HyalSoft-Plus-1.8-3ml.jpg",
+            "value": "3 ml",
+            "price": 1350,
+            "contains": "гиалуроновая кислота",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio laboriosam quaerat animi reprehenderit debitis facere."
+        },
+        {
+            "id": 10,
+            "name": "MESO-F HyalMed 2.6%",
+            "pic": "img/MESO-F-HyalMed-2.6-3ml.jpg",
+            "value": "3 ml",
+            "price": 1425,
+            "contains": "гиалуроновая кислота",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio laboriosam quaerat animi reprehenderit debitis facere."
+        },
+        {
+            "id": 11,
+            "name": "MESO-F HyalDeep 3.2%",
+            "pic": "img/MESO-F-HyalDeep-3.2-3ml.jpg",
+            "value": "3 ml",
+            "price": 1600,
+            "contains": "гиалуроновая кислота",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio laboriosam quaerat animi reprehenderit debitis facere."
+        },
+        {
+            "id": 12,
+            "name": "MESO-F HyalSoft 1.2%",
+            "pic": "img/MESO-F-HyalSoft-1.2-6ml.jpg",
+            "value": "6 ml",
+            "price": 2300,
+            "contains": "гиалуроновая кислота",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio laboriosam quaerat animi reprehenderit debitis facere."
+        },
+        {
+            "id": 13,
+            "name": "MESO-F HyalSoft Plus 1.8%",
+            "pic": "img/MESO-F-HyalSoft-Plus-1.8-6ml.jpg",
+            "value": "6 ml",
+            "price": 2650,
+            "contains": "гиалуроновая кислота",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio laboriosam quaerat animi reprehenderit debitis facere."
+        },
+        {
+            "id": 14,
+            "name": "MESO-F HyalMed 2.6%",
+            "pic": "img/MESO-F-HyalMed-2.6-6ml.jpg",
+            "value": "6 ml",
+            "price": 2750,
+            "contains": "гиалуроновая кислота",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio laboriosam quaerat animi reprehenderit debitis facere."
+        },
+        {
+            "id": 15,
+            "name": "MESO-F HyalDeep 3.2%  ",
+            "pic": "img/MESO-F-HyalDeep-3.2-6ml.jpg",
+            "value": "6 ml",
+            "price": 2850,
+            "contains": "гиалуроновая кислота",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio laboriosam quaerat animi reprehenderit debitis facere."
+        },
+        {
+            "id": 16,
+            "name": "MESO-F HyalRich 3.6%",
+            "pic": "img/MESO-F-HyalRich-3.6-7ml.jpg",
+            "value": "7 ml",
+            "price": 3200,
             "contains": "гиалуроновая кислота",
             "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio laboriosam quaerat animi reprehenderit debitis facere."
         }]
@@ -26,20 +152,92 @@
         "category": "Мезотерапия",
         "products": [
         {
-            "id": 23423,
-            "name": "Sorata Derma Activ fvdfvfdv",
-            "pic": "img/product.jpg",
-            "value": "6ml",
-            "price": 5400,
+            "id": 17,
+            "name": "Sonata Hair Extra",
+            "pic": "img/Sonata Hair Extra 6ml.jpg",
+            "value": "6 ml",
+            "price": 850,
+            "contains": "<p>Основные ингредиенты: гиалуронат натрия, мио-инозитол, L- глицин, L-аланин, L-аспарагиназа, L- цистеин, L-глутаминовая кислота, L-гистидин, L-изолейцин, фолиевая кислота, витамин С, витамин Н (биотин), витаминыВ1, В2, ВЗ, В5, В6, В12. </p>",
+            "content": "<p>Формула коктейля обеспечивает прицельную доставку ингредиентов, необходимых для формирования и укрепления здорового волосяного стержня. Сбалансированный высокоэффективный состав воздействует на регуляцию питания волосяного фолликула, тем самым предотвращает преждевременное выпадение волос, усиливает их рост. </p><p><b>Результат:</b> </p><p>Активация клеточного метаболизма кожи волосистой части головы; уменьшение активности выпадения пигмента; стимулирование роста волос. </p><p><b>Форма выпуска:</b> </p><p>Флакон 6мл с резиновой пробкой и защитным колпачком.</p>"
+        },
+        {
+            "id": 18,
+            "name": "Sonata DMAE Lift",
+            "pic": "img/Sonata DMAE Lift 6ml.jpg",
+            "value": "6 ml",
+            "price": 850,
+            "contains": "<p>Основные ингредиенты: гиалуронат натрия, 2-диметиламино-этанол, тартаровая кислота, органический кремний. </p>",
+            "content": "<p>Препарат активно воздействует на фибробласты и миофибробласты, нормализуя их работу. Действие препарата направлено на моделирование овала лица, усиление мышечного тонуса, восстановление тургора кожи. Данный комплекс прекрасно подходит для пациентов с гравитационным, деформационным и мелкоморщинистым типом старения. </p><p><b>Результат:</b> </p><p>Оказывает истинное лифтинговое действие, создает новый каркас кожи.</p><p><b>Форма выпуска:</b> </p><p>Флакон 6мл с резиновой пробкой и защитным колпачком.</p>"
+        },
+        {
+            "id": 19,
+            "name": "Sonata Antiacne Block",
+            "pic": "img/Sonata Antiacne Block 6ml.jpg",
+            "value": "6 ml",
+            "price": 850,
+            "contains": "<p>Основные ингредиенты: гиалуронат натрия, аскорбиновая кислота, глюконат цинка, глюконат меди, глюкозамина сульфат, декапептид ацетил-3, трипептид меди-1, азелаиновая кислота.</p>",
+            "content": "<p>Обладает иммунокорректирующим действием, нормализует избыточную себосекрецию, эффективно борется с воспалительными элементами и проявлениями постакне. Применяется при комедональной и подострой форме акне, при постакне. </p><p><b>Результат:</b> </p><p>Рассасывает пустулы, купирует воспалительный валик, выравнивает тон и рельеф кожи, сужает поры, делает кожу матовой. </p><p><b>Форма выпуска:</b> </p><p>Флакон 6мл с резиновой пробкой и защитным колпачком.</p>"
+        },
+        {
+            "id": 20,
+            "name": "Sonata Aminovit Extra",
+            "pic": "img/Sonata Aminovit Extra 6ml.jpg",
+            "value": "6 ml",
+            "price": 850,
+            "contains": "<p>Основные ингредиенты: гиалуронат натрия, протеиногенные L-аминокислоты. </p>",
+            "content": "<p>Сбалансированный комплекс аминокислот укрепляет барьерные свойства дермы, что приводит к выраженному эффекту лифтинга, повышению тонуса и восстановлению упругости кожи лица и тела. </p><p><b>Результат:</b> </p><p>Препарат купирует эффект синдрома «стрессовая кожа, «кожа курильщика, а именно выравнивает цвет, осветляет кожу и нивелирует легкую пигментацию. </p><p><b>Форма выпуска:</b> </p><p>Флакон 6мл с резиновой пробкой и защитным колпачком</p>"
+        },
+        {
+            "id": 21,
+            "name": "MESO-F Hair Cocktail",
+            "pic": "img/MESO-F Hair Cocktail.jpg",
+            "value": "6 ml",
+            "price": 900,
             "contains": "гиалуроновая кислота",
             "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio laboriosam quaerat animi reprehenderit debitis facere."
         },
         {
-            "id": 342,
-            "name": "Sorata Derma fbdfbActiv E",
+            "id": 22,
+            "name": "MESO-F Antiradical Active",
+            "pic": "img/MESO-F Antiradical   Active.jpg",
+            "value": "6 ml",
+            "price": 900,
+            "contains": "гиалуроновая кислота",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio laboriosam quaerat animi reprehenderit debitis facere."
+        },
+        {
+            "id": 23,
+            "name": "MESO-F DMAE ANTI-AGE Cocktail",
+            "pic": "img/MESO-F DMAE ANTI-AGE Cocktail.jpg",
+            "value": "6 ml",
+            "price": 900,
+            "contains": "гиалуроновая кислота",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio laboriosam quaerat animi reprehenderit debitis facere."
+        },
+        {
+            "id": 24,
+            "name": "MESO-F AntiAcne System",
             "pic": "img/product.jpg",
-            "value": "6ml",
-            "price": 911100,
+            "value": "6 ml",
+            "price": 900,
+            "contains": "<p>СОСТАВ: Water for injection, Ascorbic Acid, Azelaic Acid, Zinc, Copper, Sodium Hyaluronate,   Acetyl      Decapeptide-3, (Rejuline), Niacinamide, Vitamins: B1, B2, B3, B5, B6, B12.</p>",
+            "content": "<p>Препарат обладает противовоспалительным, себостатическим и себорегулирующим действием. Купирование проявлений угревой болезни любой формы и стадии. Рассасывает пустулы, выравнивает  тон и рельеф кожи.  Применяется в период постакне и при острой форме акне.</p>"
+        },
+        {
+            "id": 25,
+            "name": "MESO-F LipoDrainage Active",
+            "pic": "img/product.jpg",
+            "value": "6 ml",
+            "price": 900,
+            "contains": "<p>СОСТАВ: Water for injection, Centella Asiatica, Rutin, Green Tea Extract, Meliloto Extract, Ginkgo Biloba Extract.</p>",
+            "content": "<p>Препарат с выраженным дренажным и противоотёчным действием для улучшения микроциркуляции. Препарат активно выводит токсины из тканей, укрепляет стенки сосудов. Препятствует ресинтезу жирных кислот, антиоксидант, активизирует липолиз. Препарат содержит компоненты ликвидирующие стаз крови, а также содержит компоненты снижающие проницаемость капилляров. Применяется для лица и тела.</p>"
+        },
+        {
+            "id": 26,
+            "name": "MESO-F Amino Flash",
+            "pic": "img/MESO-F Amino Flash 6ml.jpg",
+            "value": "6 ml",
+            "price": 900,
             "contains": "гиалуроновая кислота",
             "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio laboriosam quaerat animi reprehenderit debitis facere."
         }]
@@ -48,22 +246,22 @@
         "category": "Пептиды",
         "products": [
         {
-            "id": 213,
-            "name": "Sorata Defnfgnrma Activ E",
-            "pic": "img/product.jpg",
-            "value": "6ml",
-            "price": 5165,
-            "contains": "гиалуроновая кислота",
-            "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio laboriosam quaerat animi reprehenderit debitis facere."
+            "id": 27,
+            "name": "Sonata Derma Activ E ",
+            "pic": "img/Sonata Derma Activ E 6ml.jpg",
+            "value": "6 ml",
+            "price": 900,
+            "contains": "<p>Основные ингредиенты: гиалуронат натрия, декапептид-4, аргинин, гистидин. </p>",
+            "content": "<p>Комплекс активных компонентов на основе пептидов воздействует на образование эластиновых и коллагеновых волокон, повышая тургор кожи. Действие направлено на устранение мелких и сглаживание глубоких морщин, ускорение процессов репарации кожных покровов после воздействия агрессивных факторов. </p><p><b>Результат:</b> </p><p>Сокращение морщин, выравнивание цвета лица, повышение тонуса кожи, уменьшение темных кругов под глазами. </p><p><b>Форма выпуска:</b> </p><p>Флакон 6мл с резиновой пробкой и защитным колпачком.</p>"
         },
         {
-            "id": 23123,
-            "name": "Soratagnfgng Derma Activ E",
-            "pic": "img/product.jpg",
-            "value": "6ml",
-            "price": 89,
-            "contains": "гиалуроновая кислота",
-            "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio laboriosam quaerat animi reprehenderit debitis facere."
+            "id": 28,
+            "name": "Sonata Derma Activ F ",
+            "pic": "img/Sonata Derma Activ F 6ml.jpg",
+            "value": "6 ml",
+            "price": 900,
+            "contains": "<p>Основные ингредиенты: гиалуронатнатрия, олигопептид-24 (CG-EDP-3), изолейцин, треонин, валин. </p>",
+            "content": "<p>Препарат связывается с рецепторами, чувствительными к мелатонину, купирует воспаление, стимулирует выработку факторов роста. Комплекс включает в себя Олигопептид-24, который участвует в процессах репарации и коллагеногенеза, стимулирует рост новых сосудов. </p><p><b>Результат:</b> </p><p>Омолаживает, подтягивает и уплотняет кожу, снимает раздражение и сухость, нормализует гидробаланс. </p><p><b>Форма выпуска:</b> </p><p>Флакон 6мл с резиновой пробкой и защитным колпачком.</p>"
         }]
     }]
 }
