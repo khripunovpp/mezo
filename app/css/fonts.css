@@ -1,0 +1,20 @@
+@font-face {
+  font-family: "SFProDisplay-Light";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/SFUIDisplay-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/SFUIDisplay-Light.woff") format("woff"), url("../fonts/SFUIDisplay-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "SFProDisplay-Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/SFUIDisplay-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/SFUIDisplay-Regular.woff") format("woff"), url("../fonts/SFUIDisplay-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "SFProDisplay-Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/SFUIDisplay-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/SFUIDisplay-Bold.woff") format("woff"), url("../fonts/SFUIDisplay-Bold.ttf") format("truetype");
+}

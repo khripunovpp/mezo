@@ -1,0 +1,69 @@
+{
+    "shop": [
+    {
+        "category": "Биоревитализация",
+        "products": [
+        {
+            "name": "Sorata Derma Activ Evdfv",
+            "pic": "img/product.jpg",
+            "value": "6ml",
+            "price": 900,
+            "contains": "гиалуроновая кислота",
+            "effects": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio laboriosam quaerat animi reprehenderit debitis facere.",
+            "content": "dvZSD"
+        },
+        {
+            "name": "Sorata Derma Activ Edfvdf",
+            "pic": "img/product.jpg",
+            "value": "6ml",
+            "price": 900,
+            "contains": "гиалуроновая кислота",
+            "effects": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio laboriosam quaerat animi reprehenderit debitis facere.",
+            "content": "dvZSD"
+        }]
+    },
+     {
+        "category": "Мезотерапия",
+        "products": [
+        {
+            "name": "Sorata Derma Activ fvdfvfdv",
+            "pic": "img/product.jpg",
+            "value": "6ml",
+            "price": 900,
+            "contains": "гиалуроновая кислота",
+            "effects": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio laboriosam quaerat animi reprehenderit debitis facere.",
+            "content": "dvZSD"
+        },
+        {
+            "name": "Sorata Derma fbdfbActiv E",
+            "pic": "img/product.jpg",
+            "value": "6ml",
+            "price": 900,
+            "contains": "гиалуроновая кислота",
+            "effects": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio laboriosam quaerat animi reprehenderit debitis facere.",
+            "content": "dvZSD"
+        }]
+    },
+     {
+        "category": "Пептиды",
+        "products": [
+        {
+            "name": "Sorata Defnfgnrma Activ E",
+            "pic": "img/product.jpg",
+            "value": "6ml",
+            "price": 900,
+            "contains": "гиалуроновая кислота",
+            "effects": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio laboriosam quaerat animi reprehenderit debitis facere.",
+            "content": "dvZSD"
+        },
+        {
+            "name": "Soratagnfgng Derma Activ E",
+            "pic": "img/product.jpg",
+            "value": "6ml",
+            "price": 900,
+            "contains": "гиалуроновая кислота",
+            "effects": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio laboriosam quaerat animi reprehenderit debitis facere.",
+            "content": "dvZSD"
+        }]
+    }]
+}

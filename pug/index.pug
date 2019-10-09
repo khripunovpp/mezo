@@ -1,0 +1,98 @@
+doctype html
+html
+
+	head
+		meta(charset='utf-8')
+		title
+		meta(http-equiv='X-UA-Compatible', content='IE=edge')
+		meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+		link(rel='shortcut icon', href='img/favicon.ico', type='image/x-icon')
+		link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Roboto:400,700,900")
+		link(rel='stylesheet', href='css/fonts.css')
+		link(rel='stylesheet', href='css/style.css')
+		style.
+			*,
+			*::after,
+			*::before {
+				//- outline: 1px solid rgba(255,0,0,.5) !important
+			}
+		script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js")
+
+	body
+		.w-page
+			section.hero
+				.hero__inner
+					.hero__top
+						a(href="mailto: info@bon-l.ru").hero__email info@bon-l.ru
+						a(href="tel: 8 (495) 927-0-729").hero__phone 8 (495) 927-0-729
+						.hero__callback
+							button.hero__btn Закзать звонок
+							p.hero__hours График работы по будням с 9:00 до 18:00 (время московское).
+					.hero__content
+						h1.hero__title Распродажа продукции для косметологов 
+						p.hero__subtitle -50% и более
+						.hero__sep
+						p.hero__text Биоревитализация, пептиды и мезотерапия по лучшей цене в России.
+						p.hero__subtext Осенняя супер акция на остатки препаратов из прошлой поставки. Срок годности на все товары от 1 года! (минимальный до декабря 2020 года) Лучшие цены от официального представителя марок Meso-F (Швейцария) и Sonata (Израиль).
+			section.discountText
+				.container
+					p Акция с 07.10.19 по 21.10.19
+					p Офис в Москве, доставка по всей России. Защита от контрафакта. 
+					p Оплата нал/безнал - официально, с чеками и документами. 
+			section.case
+				.container
+					.case__inner
+						.case__filter
+							.filter
+								button.filter__but.active(data-filter="*") Все
+						.case__list
+							.case__item
+								.product.biorevitalizaciya
+									.product__pic
+										img(src="img/product.jpg", alt="")
+									p.product__name Sonata Derma Activ E 
+									p.product__value 6 ml
+									p.product__price 900,00 р.
+										span.product__quantity
+											input(type="text")
+											span шт.
+									button.product__add Добавить в корзину
+			section.forms
+				.container
+					.forms__inner
+						.forms__callback
+							form(action="", ).form#callback
+								.form__group
+									input(type="text", name="name")
+								.form__group
+									input(type="tel", name="phone")
+								button.form__submit Отправить
+						.forms__order
+							form(action="", ).form#order
+								.form__group
+									input(type="text", name="name")
+								.form__group
+									input(type="tel", name="phone")
+								.form__group
+									input(type="email", name="email")
+								.form__group
+									input(type="text", name="city")
+								input(type="hidden", name="order")
+								.form__order
+									.order
+										p.order__title
+										.order__list
+											p.order__item MESO-F Hair Cocktail x6
+												button Удалить
+										.order__cost 
+											span.js-total
+								button.form__submit Отправить
+			footer.footer
+				.container
+					a(href="mailto: info@bon-l.ru") info@bon-l.ru
+					a(href="tel: 8 (495) 927-0-729") 8 (495) 927-0-729
+					a(href="https://www.instagram.com/lymmedrus/") @lymmedrus
+
+
+		script(src="js/isotope.pkgd.min.js")
+		script(src="js/common.js")

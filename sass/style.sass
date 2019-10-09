@@ -1,0 +1,326 @@
+@import "bourbon"
+@import "icon.sass"
+@import "mixins"
+
+$color: #f4c409
+$font: 'SFProDisplay-Light', sans-serif
+$font2: 'SFProDisplay-Regular', sans-serif
+$font3: 'SFProDisplay-Bold', sans-serif
+
+html
+	box-sizing: border-box
+
+*,
+*::after,
+*::before
+	box-sizing: inherit
+	outline: none
+
+@include placeholder()
+  color: #eee
+
+body
+	margin: 0	
+	overflow-x: hidden
+	font-family: $font
+	font-weight: 200
+	line-height: 1.4
+	font-size: 14px
+	background-color: #fff
+	text-size-adjust: 100%
+	-webkit-tap-highlight-color: transparent
+
+img
+	max-width: 100%	
+	border: none	
+	outline: none	
+
+a
+	border: none	
+	outline: none	
+
+ul
+	list-style-type: none	
+	margin: 0	
+	padding: 0
+
+select::-ms-expand
+	display: none
+
+select
+	appearance: none
+
+button,
+input,
+textarea,
+select
+	font-family: $font
+
+%container
+	width: 100%
+	max-width: 970px	
+	padding: 0 15px
+	margin: 0 auto
+
+%grid
+	display: table
+	width: 100%
+	table-layout: fixed
+
+%part
+	display: table-cell
+	vertical-align: top
+
+.container
+	@extend %container
+
+.hero
+	background-image: url(../img/hero-bg.jpg)
+	background-size: cover
+	background-position: 50% 0
+	&__inner
+		padding: 30px 15px 40px
+		max-width: 1300px
+		margin: 0 auto
+		position: relative
+		opacity: .99
+	&__top
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		align-items: stretch
+		justify-content: space-between
+	&__callback
+		margin-left: auto
+		max-width: 320px
+	&__btn
+		font-size: 24px
+		line-height: 32px
+		color: #fff
+		padding: 20px
+		display: block
+		width: 100%
+		background-color: transparent
+		border: 1px solid #f2f2f2
+		font-family: $font2
+		cursor: pointer
+		transition: all .2s
+		&:hover
+			background-color: #fff
+			color: #000
+	&__hours
+		font-size: 14px
+		line-height: 19px
+		font-family: $font2
+		letter-spacing: 0.2916667px
+		color: #fff
+		margin: 20px 0 0
+	&__email,
+	&__phone
+		font-family: $font3
+		font-weight: 700
+		color: #fff
+		font-size: 20px
+		line-height: 27px
+		letter-spacing: 0.4166667px
+		text-decoration: none
+		&:hover
+			text-decoration: underline
+	&__email
+		margin-right: 45px
+	&__content
+		width: 50%
+		padding-right: 70px
+		color: #fff
+		&::after
+			content: ''
+			position: absolute
+			z-index: -1
+			top: 0
+			right: calc(50% + 50px)
+			width: 100%
+			height: 100%
+			background-color: rgba(19,18,18,0.71)
+		&::before
+			content: ''
+			position: absolute
+			bottom: 30px
+			right: 70px
+			width: 372px
+			height: 357px
+			background-image: url(../img/hero-pic.png)
+	&__title
+		font-family: $font2
+		font-weight: 400
+		font-size: 63px
+		line-height: 67px
+		letter-spacing: 1.3125px
+		margin: 0
+	&__subtitle
+		margin: 20px 0 0
+		font-size: 60px
+		line-height: 80px
+		letter-spacing: 1.25px
+	&__sep
+		width: 1px
+		height: 45px
+		background-color: #fff
+		margin: 50px 0 70px
+	&__text
+		max-width: 300px
+		font-size: 22px
+		line-height: 29px
+		font-family: $font2
+		letter-spacing: 0.4583333px
+		margin: 0 0 0
+	&__subtext
+		font-size: 18px
+		line-height: 24px
+		letter-spacing: 0.375px
+		font-weight: 400
+		margin: 50px 0 0
+
+
+.discountText
+	background-color: #f4f4f4
+	padding: 20px 0
+	color: #242424
+	font-size: 20px
+	line-height: 27px
+	text-align: center
+	p
+		margin: 0
+
+
+.footer
+	background-color: #ebebeb
+	color: #686868
+	font-size: 20px
+	line-height: 27px
+	letter-spacing: 0.4166667px
+	text-align: center
+	padding: 35px 0
+	a
+		text-decoration: none
+		color: inherit
+		display: inline-block
+		&:hover
+			color: #000
+			text-decoration: underline
+	a+a
+		margin-left: 45px
+
+.case
+	padding: 40px 0
+	&__filter
+		margin-bottom: 50px
+		text-align: center
+	&__list
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		flex-wrap: wrap
+		margin: -10px
+	&__item
+		margin: 10px
+		width: calc(25% - 20px)
+
+.filter
+	&__but
+		font-size: 22px
+		line-height: 1
+		color: #a9a9a9
+		letter-spacing: 0.4583333px
+		background-color: transparent
+		padding: 5px 10px
+		border-radius: 2px
+		border: 1px solid transparent
+		cursor: pointer
+		&+&	
+			margin-left: 40px
+		&.active,
+			border-color: #cbcbcb
+		&:hover,
+		&.active
+			color: #025216
+
+.product
+	border-radius: 2px
+	border: 1px solid #dedede
+	background-color: #f3f3f3
+	padding: 3px
+	font-size: 16px
+	font-weight: 400
+	font-family: $font2
+	color: #242424
+	&.added
+		user-select: none
+		pointer-events: none
+		.product__add
+			background-color: #762687
+	&__pic
+		height: 200px
+		text-align: center
+		background-color: #fff
+		border-radius: 2px
+		margin-bottom: 10px
+		img
+			object-fit: scale-down
+			height: 100%
+	&__name
+		margin: 0
+	&__value
+		margin: 0
+	&__price
+		margin: 10px 0 0 
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		align-items: center
+	&__quantity
+		margin-left: auto
+		display: inline-block
+		border-radius: 2px
+		border: solid 1px #c9c9c9
+		padding: 2px 4px
+		input
+			width: 40px
+			border: none
+			font-family: $font2
+			font-size: 16px
+			background-color: transparent
+			margin-right: 5px
+	&__add
+		margin-top: 10px
+		font-size: 16px
+		line-height: 21px
+		letter-spacing: 0.3333333px
+		color: #fff
+		border-radius: 2px
+		background-color: #013403
+		border: none
+		width: 100%
+		padding: 12px
+		cursor: pointer
+		&:hover
+			background-color: #762687
+
+.forms
+	&__inner
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		align-items: flex-start
+		justify-content: space-between
+
+
+//ALWAYS END
+@import "media"
