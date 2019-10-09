@@ -4,6 +4,7 @@
         "category": "Биоревитализация",
         "products": [
         {
+            "id": 946,
             "name": "Sorata Derma Activ Evdfv",
             "pic": "img/product.jpg",
             "value": "6ml",
@@ -13,6 +14,7 @@
             "content": "dvZSD"
         },
         {
+            "id": 745,
             "name": "Sorata Derma Activ Edfvdf",
             "pic": "img/product.jpg",
             "value": "6ml",
@@ -26,6 +28,7 @@
         "category": "Мезотерапия",
         "products": [
         {
+            "id": 23423,
             "name": "Sorata Derma Activ fvdfvfdv",
             "pic": "img/product.jpg",
             "value": "6ml",
@@ -35,6 +38,7 @@
             "content": "dvZSD"
         },
         {
+            "id": 342,
             "name": "Sorata Derma fbdfbActiv E",
             "pic": "img/product.jpg",
             "value": "6ml",
@@ -48,6 +52,7 @@
         "category": "Пептиды",
         "products": [
         {
+            "id": 213,
             "name": "Sorata Defnfgnrma Activ E",
             "pic": "img/product.jpg",
             "value": "6ml",
@@ -57,6 +62,7 @@
             "content": "dvZSD"
         },
         {
+            "id": 23123,
             "name": "Soratagnfgng Derma Activ E",
             "pic": "img/product.jpg",
             "value": "6ml",

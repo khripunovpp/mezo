@@ -20,19 +20,23 @@ html {
 }
 
 input::-webkit-input-placeholder {
-  color: #eee;
+  color: #555;
+  font-size: 16px;
 }
 
 input:-moz-placeholder {
-  color: #eee;
+  color: #555;
+  font-size: 16px;
 }
 
 input::-moz-placeholder {
-  color: #eee;
+  color: #555;
+  font-size: 16px;
 }
 
 input:-ms-input-placeholder {
-  color: #eee;
+  color: #555;
+  font-size: 16px;
 }
 
 body {
@@ -86,7 +90,7 @@ select {
 
 .container {
   width: 100%;
-  max-width: 970px;
+  max-width: 1000px;
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -346,14 +350,6 @@ select {
   color: #242424;
 }
 
-.product.added {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  pointer-events: none;
-}
-
 .product.added .product__add {
   background-color: #762687;
 }
@@ -430,6 +426,11 @@ select {
   background-color: #762687;
 }
 
+.forms {
+  padding: 100px 0;
+  background-color: #F4F4F4;
+}
+
 .forms__inner {
   display: -webkit-flex;
   display: -moz-flex;
@@ -446,6 +447,126 @@ select {
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  margin: 0 -20px;
+}
+
+.forms__item {
+  width: 50%;
+  margin: 0 20px;
+}
+
+.form__title {
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.5px;
+  color: #242424;
+  font-family: "SFProDisplay-Regular", sans-serif;
+  font-weight: 400;
+}
+
+.form__group {
+  border: solid 1px #979797;
+  border-radius: 2px;
+  background-color: #fff;
+}
+
+.form__group input {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  padding: 15px;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "SFProDisplay-Regular", sans-serif;
+}
+
+.form__group + .form__group {
+  margin-top: 10px;
+}
+
+.form__submit {
+  margin: 20px 0 0;
+  letter-spacing: 0.5px;
+  font-size: 24px;
+  font-family: "SFProDisplay-Regular", sans-serif;
+  font-weight: 400;
+  color: #fff;
+  line-height: 1;
+  background-color: #013403;
+  padding: 15px;
+  border: none;
+  border-radius: 2px;
+  max-width: 215px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.form__submit:hover {
+  background-color: #762687;
+}
+
+.form__order {
+  margin-top: 15px;
+}
+
+.order {
+  color: #242424;
+}
+
+.order.empty .order__empty {
+  display: block;
+}
+
+.order.empty .order__title,
+.order.empty .order__list,
+.order.empty .order__total {
+  display: none;
+}
+
+.order__empty {
+  font-size: 24px;
+  line-height: 1;
+  margin: 0;
+  display: none;
+}
+
+.order__title {
+  font-size: 24px;
+  line-height: 1;
+  margin: 0 0 5px;
+}
+
+.order__item {
+  font-size: 24px;
+  line-height: 1;
+  margin: 0;
+}
+
+.order__item + .order__item {
+  margin-top: 5px;
+}
+
+.order__total {
+  font-size: 24px;
+  line-height: 1;
+  margin: 10px 0 0;
+}
+
+.order__delete {
+  padding: 0;
+  background-color: transparent;
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: 0.5px;
+  text-decoration: underline;
+  color: #BBBBBB;
+  border: none;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.order__delete:hover {
+  color: #ff0000;
 }
 
 /* Desktop-frist */

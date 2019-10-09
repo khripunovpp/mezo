@@ -17,7 +17,8 @@ html
 	outline: none
 
 @include placeholder()
-  color: #eee
+	color: #555
+	font-size: 16px
 
 body
 	margin: 0	
@@ -58,7 +59,7 @@ select
 
 %container
 	width: 100%
-	max-width: 970px	
+	max-width: 1000px	
 	padding: 0 15px
 	margin: 0 auto
 
@@ -258,8 +259,6 @@ select
 	font-family: $font2
 	color: #242424
 	&.added
-		user-select: none
-		pointer-events: none
 		.product__add
 			background-color: #762687
 	&__pic
@@ -312,6 +311,8 @@ select
 			background-color: #762687
 
 .forms
+	padding: 100px 0
+	background-color: #F4F4F4
 	&__inner
 		display: -webkit-flex
 		display: -moz-flex
@@ -320,7 +321,94 @@ select
 		display: flex
 		align-items: flex-start
 		justify-content: space-between
+		margin: 0 -20px	
+	&__item
+		width: 50%	
+		margin: 0 20px
 
+.form
+	&__title
+		font-size: 24px
+		line-height: 32px
+		letter-spacing: 0.5px
+		color: #242424
+		font-family: $font2
+		font-weight: 400
+	&__group
+		border: solid 1px #979797
+		border-radius: 2px
+		background-color: #fff
+		input
+			width: 100%
+			background-color: transparent
+			border: none
+			padding: 15px
+			font-size: 16px
+			font-weight: 400
+			font-family: $font2
+		&+&
+			margin-top: 10px
+	&__submit
+		margin: 20px 0 0
+		letter-spacing: 0.5px
+		font-size: 24px
+		font-family: $font2
+		font-weight: 400
+		color: #fff
+		line-height: 1
+		background-color: #013403
+		padding: 15px
+		border: none
+		border-radius: 2px
+		max-width: 215px
+		width: 100%
+		cursor: pointer
+		&:hover
+			background-color: #762687
+	&__order
+		margin-top: 15px
+
+.order
+	color: #242424
+	&.empty
+		.order__empty
+			display: block
+		.order__title,
+		.order__list,
+		.order__total
+			display: none
+	&__empty
+		font-size: 24px
+		line-height: 1
+		margin: 0
+		display: none
+	&__title
+		font-size: 24px
+		line-height: 1
+		margin: 0 0 5px
+	&__item
+		font-size: 24px
+		line-height: 1
+		margin: 0
+		&+&
+			margin-top: 5px
+	&__total
+		font-size: 24px
+		line-height: 1
+		margin: 10px 0 0
+	&__delete
+		padding: 0
+		background-color: transparent
+		font-size: 20px
+		line-height: 1
+		letter-spacing: 0.5px
+		text-decoration: underline
+		color: #BBBBBB
+		border: none
+		margin-left: 10px
+		cursor: pointer
+		&:hover
+			color: #ff0000
 
 //ALWAYS END
 @import "media"

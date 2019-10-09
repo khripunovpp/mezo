@@ -24,7 +24,7 @@
         <div class="hero__inner">
           <div class="hero__top"><a class="hero__email" href="mailto: info@bon-l.ru">info@bon-l.ru</a><a class="hero__phone" href="tel: 8 (495) 927-0-729">8 (495) 927-0-729</a>
             <div class="hero__callback">
-              <button class="hero__btn">Закзать звонок</button>
+              <button class="hero__btn js-to-callback">Закзать звонок</button>
               <p class="hero__hours">График работы по будням с 9:00 до 18:00 (время московское).</p>
             </div>
           </div>
@@ -52,59 +52,51 @@
                 <button class="filter__but active" data-filter="*">Все</button>
               </div>
             </div>
-            <div class="case__list">
-              <div class="case__item">
-                <div class="product biorevitalizaciya">
-                  <div class="product__pic"><img src="img/product.jpg" alt=""></div>
-                  <p class="product__name">Sonata Derma Activ E </p>
-                  <p class="product__value">6 ml</p>
-                  <p class="product__price">900,00 р.<span class="product__quantity">
-                      <input type="text"><span>шт.</span></span></p>
-                  <button class="product__add">Добавить в корзину</button>
-                </div>
-              </div>
-            </div>
+            <div class="case__list"></div>
           </div>
         </div>
       </section>
       <section class="forms">
         <div class="container">
           <div class="forms__inner">
-            <div class="forms__callback">
+            <div class="forms__item">
               <form class="form" action="" id="callback">
+                <p class="form__title"> Оставить заявку для обратного звонка:</p>
                 <div class="form__group">
-                  <input type="text" name="name">
+                  <input type="text" name="name" placeholder="Имя *" required>
                 </div>
                 <div class="form__group">
-                  <input type="tel" name="phone">
+                  <input type="tel" name="phone" placeholder="Телефон *" required>
                 </div>
                 <button class="form__submit">Отправить</button>
               </form>
             </div>
-            <div class="forms__order">
+            <div class="forms__item">
               <form class="form" action="" id="order">
+                <p class="form__title">Оформить заказ:</p>
                 <div class="form__group">
-                  <input type="text" name="name">
+                  <input type="text" name="name" placeholder="Имя *" required>
                 </div>
                 <div class="form__group">
-                  <input type="tel" name="phone">
+                  <input type="tel" name="phone" placeholder="Телефон *" required>
                 </div>
                 <div class="form__group">
-                  <input type="email" name="email">
+                  <input type="email" name="email" placeholder="E-mail">
                 </div>
                 <div class="form__group">
-                  <input type="text" name="city">
+                  <input type="text" name="city" placeholder="Город">
                 </div>
                 <input type="hidden" name="order">
                 <div class="form__order">
                   <div class="order">
-                    <p class="order__title"></p>
+                    <p class="order__empty">В заказе пусто</p>
+                    <p class="order__title">Ваш заказ:</p>
                     <div class="order__list">
                       <p class="order__item">MESO-F Hair Cocktail x6
-                        <button>Удалить</button>
+                        <button class="order__delete">Удалить</button>
                       </p>
                     </div>
-                    <div class="order__cost"> <span class="js-total"></span></div>
+                    <div class="order__total">Цена: <span class="js-total">15 000</span> р.</div>
                   </div>
                 </div>
                 <button class="form__submit">Отправить</button>

@@ -26,7 +26,7 @@ html
 						a(href="mailto: info@bon-l.ru").hero__email info@bon-l.ru
 						a(href="tel: 8 (495) 927-0-729").hero__phone 8 (495) 927-0-729
 						.hero__callback
-							button.hero__btn Закзать звонок
+							button.hero__btn.js-to-callback Закзать звонок
 							p.hero__hours График работы по будням с 9:00 до 18:00 (время московское).
 					.hero__content
 						h1.hero__title Распродажа продукции для косметологов 
@@ -46,46 +46,39 @@ html
 							.filter
 								button.filter__but.active(data-filter="*") Все
 						.case__list
-							.case__item
-								.product.biorevitalizaciya
-									.product__pic
-										img(src="img/product.jpg", alt="")
-									p.product__name Sonata Derma Activ E 
-									p.product__value 6 ml
-									p.product__price 900,00 р.
-										span.product__quantity
-											input(type="text")
-											span шт.
-									button.product__add Добавить в корзину
 			section.forms
 				.container
 					.forms__inner
-						.forms__callback
+						.forms__item
 							form(action="", ).form#callback
+								p.form__title  Оставить заявку для обратного звонка:
 								.form__group
-									input(type="text", name="name")
+									input(type="text", name="name", placeholder="Имя *", required)
 								.form__group
-									input(type="tel", name="phone")
+									input(type="tel", name="phone", placeholder="Телефон *", required)
 								button.form__submit Отправить
-						.forms__order
+						.forms__item
 							form(action="", ).form#order
+								p.form__title Оформить заказ:
 								.form__group
-									input(type="text", name="name")
+									input(type="text", name="name", placeholder="Имя *", required)
 								.form__group
-									input(type="tel", name="phone")
+									input(type="tel", name="phone", placeholder="Телефон *", required)
 								.form__group
-									input(type="email", name="email")
+									input(type="email", name="email", placeholder="E-mail")
 								.form__group
-									input(type="text", name="city")
+									input(type="text", name="city", placeholder="Город")
 								input(type="hidden", name="order")
 								.form__order
 									.order
-										p.order__title
+										p.order__empty В заказе пусто
+										p.order__title Ваш заказ:
 										.order__list
 											p.order__item MESO-F Hair Cocktail x6
-												button Удалить
-										.order__cost 
-											span.js-total
+												button.order__delete Удалить
+										.order__total Цена: 
+											span.js-total 15 000
+											|  р.
 								button.form__submit Отправить
 			footer.footer
 				.container
