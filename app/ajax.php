@@ -13,7 +13,7 @@ $jsonout = '';
 
 if (!empty($phone)) {
 
-	$to = 'khripunovpp@gmail.com, khripunovpp@mail.ru, info@bon-l.ru, info@lymmed.ru';
+	$to = 'info@bon-l.ru, info@lymmed.ru';
 	$subject = 'Мезо Акция ЗАЯВКА';
 	$headers  = 'MIME-Version: 1.0' . "\r\n";
 	$headers .= 'Content-type: text/html; utf-8' . "\r\n";
