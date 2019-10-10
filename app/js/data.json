@@ -217,7 +217,7 @@
         {
             "id": 24,
             "name": "MESO-F AntiAcne System",
-            "pic": "img/product.jpg",
+            "pic": "img/no-pic.jpg",
             "value": "6 ml",
             "price": 900,
             "contains": "<p>Состав: Water for injection, Ascorbic Acid, Azelaic Acid, Zinc, Copper, Sodium Hyaluronate,   Acetyl      Decapeptide-3, (Rejuline), Niacinamide, Vitamins: B1, B2, B3, B5, B6, B12.</p>",
@@ -226,7 +226,7 @@
         {
             "id": 25,
             "name": "MESO-F LipoDrainage Active",
-            "pic": "img/product.jpg",
+            "pic": "img/no-pic.jpg",
             "value": "6 ml",
             "price": 900,
             "contains": "<p>Состав: Water for injection, Centella Asiatica, Rutin, Green Tea Extract, Meliloto Extract, Ginkgo Biloba Extract.</p>",
