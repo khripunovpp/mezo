@@ -3,9 +3,7 @@
 @import "mixins"
 
 $color: #f4c409
-$font: 'SFProDisplay-Light', sans-serif
-$font2: 'SFProDisplay-Regular', sans-serif
-$font3: 'SFProDisplay-Bold', sans-serif
+$font: -apple-system, BlinkMacSystemFont, sans-serif
 
 html
 	box-sizing: border-box
@@ -110,7 +108,7 @@ select
 		width: 100%
 		background-color: transparent
 		border: 1px solid #f2f2f2
-		font-family: $font2
+		font-family: $font
 		cursor: pointer
 		transition: all .2s
 		&:hover
@@ -119,13 +117,13 @@ select
 	&__hours
 		font-size: 14px
 		line-height: 19px
-		font-family: $font2
+		font-family: $font
 		letter-spacing: 0.2916667px
 		color: #fff
 		margin: 20px 0 0
 	&__email,
 	&__phone
-		font-family: $font3
+		font-family: $font
 		font-weight: 700
 		color: #fff
 		font-size: 20px
@@ -158,7 +156,7 @@ select
 			height: 357px
 			background-image: url(../img/hero-pic.png)
 	&__title
-		font-family: $font2
+		font-family: $font
 		font-weight: 400
 		font-size: 63px
 		line-height: 67px
@@ -178,7 +176,7 @@ select
 		max-width: 300px
 		font-size: 22px
 		line-height: 29px
-		font-family: $font2
+		font-family: $font
 		letter-spacing: 0.4583333px
 		margin: 0 0 0
 	&__subtext
@@ -261,7 +259,7 @@ select
 	padding: 3px
 	font-size: 16px
 	font-weight: 400
-	font-family: $font2
+	font-family: $font
 	color: #242424
 	&.added
 		.product__add
@@ -297,7 +295,7 @@ select
 		input
 			width: 40px
 			border: none
-			font-family: $font2
+			font-family: $font
 			font-size: 16px
 			background-color: transparent
 			margin-right: 5px
@@ -354,7 +352,7 @@ select
 		line-height: 32px
 		letter-spacing: 0.5px
 		color: #242424
-		font-family: $font2
+		font-family: $font
 		font-weight: 400
 	&__group
 		border: solid 1px #979797
@@ -367,14 +365,14 @@ select
 			padding: 15px
 			font-size: 16px
 			font-weight: 400
-			font-family: $font2
+			font-family: $font
 		&+&
 			margin-top: 10px
 	&__submit
 		margin: 20px 0 0
 		letter-spacing: 0.5px
 		font-size: 24px
-		font-family: $font2
+		font-family: $font
 		font-weight: 400
 		color: #fff
 		line-height: 1
@@ -490,6 +488,21 @@ select
 			background-color: #762687
 	&__tail
 		width: 100%
+		& > *:first-child
+			margin-top: 0 !important
+		table
+			table-layout: fixed
+			width: 100%
+			border-collapse: collapse
+			margin-top: 20px
+			td
+				vertical-align: top
+				border-bottom: solid 1px #dbdbdb
+				padding: 10px
+			p
+				margin: 0
+		center
+			margin: 50px 0 20px
 	&__pic
 		width: 200px
 		height: 250px
