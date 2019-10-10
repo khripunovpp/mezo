@@ -7,9 +7,22 @@ html
 		meta(http-equiv='X-UA-Compatible', content='IE=edge')
 		meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
 		link(rel='shortcut icon', href='img/favicon.ico', type='image/x-icon')
-		link(rel='stylesheet', href='css/fonts.css')
 		link(rel='stylesheet', href='css/style.css')
 		script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js")
+		script.
+			(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+			m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+			(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+			ym(55705045, "init", {
+			clickmap:true,
+			trackLinks:true,
+			accurateTrackBounce:true,
+			webvisor:true
+			});
+		noscript
+			div
+				img(src='https://mc.yandex.ru/watch/55705045', style='position:absolute; left:-9999px;', alt='')
+
 
 	body
 		.w-page
@@ -17,9 +30,9 @@ html
 				.hero__inner
 					.hero__top
 						a(href="mailto: info@bon-l.ru").hero__email info@bon-l.ru
-						a(href="tel: 8 (495) 927-0-729").hero__phone 8 (495) 927-0-729
+						a(href="tel: 8 (495) 927-0-729").hero__phone.ya-phone 8 (495) 927-0-729
 						.hero__callback
-							button.hero__btn.js-to-callback Закзать звонок
+							button.hero__btn.js-to-callback Заказать звонок
 							p.hero__hours График работы по будням с 9:00 до 18:00 (время московское).
 					.hero__content
 						h1.hero__title Распродажа продукции для косметологов 
@@ -29,7 +42,7 @@ html
 						p.hero__subtext Осенняя супер акция на остатки препаратов из прошлой поставки. Срок годности на все товары от 1 года! (минимальный до декабря 2020 года) Лучшие цены от официального представителя марок Meso-F (Швейцария) и Sonata (Израиль).
 			section.discountText
 				.container
-					p Акция с 07.10.19 по 21.10.19
+					p Акция с 11.10.19 по 25.11.19
 					p Офис в Москве, доставка по всей России. Защита от контрафакта. 
 					p Оплата нал/безнал - официально, с чеками и документами. 
 			section.case
@@ -71,16 +84,14 @@ html
 										p.order__empty В заказе пусто
 										p.order__title Ваш заказ:
 										.order__list
-											p.order__item MESO-F Hair Cocktail x6
-												button.order__delete Удалить
-										.order__total Цена: 
+										.order__total Итого: 
 											span.js-total 
 											| ,00 р.
 								button.form__submit Отправить
 			footer.footer
 				.container
 					a(href="mailto: info@bon-l.ru") info@bon-l.ru
-					a(href="tel: 8 (495) 927-0-729") 8 (495) 927-0-729
+					a(href="tel: 8 (495) 927-0-729").ya-phone 8 (495) 927-0-729
 					a(href="https://www.instagram.com/lymmedrus/") @lymmedrus
 
 			aside.popup

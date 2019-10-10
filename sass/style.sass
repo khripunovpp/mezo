@@ -275,6 +275,9 @@ select
 			height: 100%
 	&__name
 		margin: 0
+		overflow: hidden
+		white-space: nowrap
+		text-overflow: ellipsis
 	&__value
 		margin: 0
 	&__price
@@ -389,6 +392,8 @@ select
 
 .order
 	color: #242424
+	padding: 15px
+	background-color: #ebe5ed
 	&.empty
 		.order__empty
 			display: block
@@ -402,9 +407,9 @@ select
 		margin: 0
 		display: none
 	&__title
-		font-size: 24px
+		font-size: 19px
 		line-height: 1
-		margin: 0 0 5px
+		margin: 0 0 8px
 	&__item
 		font-size: 24px
 		line-height: 1

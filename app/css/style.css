@@ -371,6 +371,10 @@ select {
 
 .product__name {
   margin: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
 }
 
 .product__value {
@@ -534,6 +538,8 @@ select {
 
 .order {
   color: #242424;
+  padding: 15px;
+  background-color: #ebe5ed;
 }
 
 .order.empty .order__empty {
@@ -554,9 +560,9 @@ select {
 }
 
 .order__title {
-  font-size: 24px;
+  font-size: 19px;
   line-height: 1;
-  margin: 0 0 5px;
+  margin: 0 0 8px;
 }
 
 .order__item {

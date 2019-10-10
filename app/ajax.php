@@ -1,5 +1,6 @@
 ﻿<?php
 
+
 $name = htmlspecialchars($_POST['name']);
 $email = htmlspecialchars($_POST['email']);
 $city = htmlspecialchars($_POST['city']);
@@ -8,7 +9,7 @@ $order = htmlspecialchars($_POST['order']);
 $total = htmlspecialchars($_POST['total']);
 $form = htmlspecialchars($_POST['form']);
 
-$jsonout = '';
+$jsonout = '{"formid": "", "status": "error", "message": "Упс"}';
 
 
 if (!empty($phone)) {
@@ -36,11 +37,11 @@ if (!empty($phone)) {
 				
 	mail($to, $subject, $message, $headers);
 
-	$jsonout = '{"status": "success", "message": "Успешно"}';
+	$jsonout = '{"formid": "'.$form.'", "status": "success", "message": "Заявка принята! Менеджер свяжется с Вами в ближайшее (рабочее) время."}';
 
 } else {
 
-	$jsonout = '{"status": "error", "message": "Без телефона мы не сможем связаться с вами."}';
+	$jsonout = '{"formid": "'.$form.'", "status": "error", "message": "Без телефона мы не сможем связаться с вами."}';
 	
 }
 

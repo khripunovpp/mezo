@@ -112,6 +112,7 @@ var Shop = {
 
         $('body').on('click', '.js-to-callback', function(e) {
             Util.scrollToEl($('#callback'));
+            yaCounter55705045.reachGoal('tocallback');
         });
 
         $('body').on('click', '.product__pic', function(e) {
@@ -150,7 +151,7 @@ var Shop = {
 
             var productCase = $('<div>').addClass('case__item product ' + Util.slugify(Util.translit(category))).attr('data-data', JSON.stringify(el)).attr('data-id', el.id),
                 productPic = $('<a href="#">').addClass('product__pic').append($('<img>').attr('src', el.pic)),
-                productName = $('<p>').addClass('product__name').text(el.name),
+                productName = $('<p>').addClass('product__name').text(el.name).attr('title', el.name),
                 productValue = $('<p>').addClass('product__value').text(el.value),
                 productPrice = $('<p>').addClass('product__price').text(el.price + ",00 р."),
                 productQunatityEl = $('<span>').addClass('product__quantity').append($('<input type="text" name="quantity" value="1">')).append($('<span>шт.</span>')),
@@ -192,7 +193,7 @@ var Shop = {
 
         productData = JSON.parse(productCard.attr('data-data'));
 
-        productCard.addClass('added').find('.product__add, .card__add').text("В корзине").addClass('js-to-basket');
+        productCard.addClass('added').find('.product__add, .card__add').text("Товар в корзине").addClass('js-to-basket');
 
         var item = {
             id: productData.id,
@@ -257,8 +258,8 @@ var Shop = {
 
         basket.map(function(item) {
             var elem = $('[data-id="' + item.id + '"]');
-            elem.addClass('added').find('.product__add').text("В корзине").addClass('js-to-basket');
-            $('.card__add').text("В корзине").addClass('js-to-basket');
+            elem.addClass('added').find('.product__add').text("Товар в корзине").addClass('js-to-basket');
+            $('.card__add').text("Товар в корзине").addClass('js-to-basket');
             elem.find('[name="quantity"]').val(item.quantity);
             renderBasketItem(item);
         })
@@ -306,7 +307,7 @@ var Shop = {
 
             if (added) {
                 $('.card').addClass('added');
-                $('.card__add').text('В корзине').addClass('js-to-basket');
+                $('.card__add').text('Товар в корзине').addClass('js-to-basket');
             }
 
             cb();
@@ -349,12 +350,15 @@ var ajax = function(form) {
 
         var json = JSON.parse(data),
             status = json.status,
-            message = json.message;
+            message = json.message,
+            formid = json.formid;
 
         if (status === 'success') {
             $('input, textarea, button[type=submit]').each(function() {
                 $(this).prop("disabled", "true");
             });
+
+            yaCounter55705045.reachGoal(formid);
         }
 
         addNotify(status, message)
