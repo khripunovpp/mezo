@@ -375,4 +375,10 @@ var ajax = function(form) {
 
 $(function() {
     Shop.init()
+
+    $('[href*="insta"]').on('click', function(event) {
+        event.preventDefault();
+        var confirm = window.confirm("Нажав клавишу ОК, вы перейдете на вспомогательный Instagram-аккаунт компании");
+        if(confirm) window.open($(this).attr('href'))
+    });
 });
