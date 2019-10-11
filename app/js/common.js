@@ -378,7 +378,7 @@ $(function() {
 
     $('[href*="insta"]').on('click', function(event) {
         event.preventDefault();
-        var confirm = window.confirm("Нажав клавишу ОК, вы перейдете на вспомогательный Instagram-аккаунт компании");
+        var confirm = window.confirm("Нажав кнопку ОК, вы перейдете на вспомогательный Instagram-аккаунт компании");
         if(confirm) window.open($(this).attr('href'))
     });
 });

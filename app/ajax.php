@@ -10,7 +10,6 @@ $form = htmlspecialchars($_POST['form']);
 
 $jsonout = '{"formid": "", "status": "error", "message": "Упс"}';
 
-
 if (!empty($phone)) {
 
 	$to = 'info@bon-l.ru, info@lymmed.ru';
