@@ -776,10 +776,7 @@ select {
     font-size: 16px;
   }
   .filter__but {
-    margin: 10px;
-  }
-  .filter__but + .filter__but {
-    margin: 0;
+    margin: 5px !important;
   }
   .case__list {
     margin: -15px 0;

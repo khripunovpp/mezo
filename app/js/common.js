@@ -112,7 +112,15 @@ var Shop = {
 
         $('body').on('click', '.js-to-callback', function(e) {
             Util.scrollToEl($('#callback'));
-            yaCounter55705045.reachGoal('tocallback');
+            reachGoal('tocallback')
+        });
+
+        $('body').on('click', '.product__add:not(.js-to-basket), .card__add:not(.js-to-basket)', function(e) {
+            var product = $(this).closest('.product, .card'),
+                productData = JSON.parse(product.attr('data-data'));
+
+            reachGoal(productData.name)
+            reachGoal('add')
         });
 
         $('body').on('click', '.product__pic', function(e) {
@@ -358,7 +366,7 @@ var ajax = function(form) {
                 $(this).prop("disabled", "true");
             });
 
-            yaCounter55705045.reachGoal(formid);
+            reachGoal(formid);
         }
 
         addNotify(status, message)
@@ -373,12 +381,16 @@ var ajax = function(form) {
     }
 }
 
+var reachGoal = function(id) {
+    yaCounter55705045.reachGoal(id);
+}
+
 $(function() {
     Shop.init()
 
     $('[href*="insta"]').on('click', function(event) {
         event.preventDefault();
         var confirm = window.confirm("Нажав кнопку ОК, вы перейдете на вспомогательный Instagram-аккаунт компании");
-        if(confirm) window.open($(this).attr('href'))
+        if (confirm) window.open($(this).attr('href'))
     });
 });

@@ -5,7 +5,7 @@
         "products": [
         {
             "id": 1,
-            "name": "Sonata HA 1.8-perfect ",
+            "name": "Sonata HA 1.8-perfect",
             "pic": "img/Sonata-HA-1.8-perfect-1.6ml.jpg",
             "value": "1.6 ml",
             "price": 1200,
@@ -14,7 +14,7 @@
         },
         {
             "id": 2,
-            "name": "Sonata HA 2.7-perfect ",
+            "name": "Sonata HA 2.7-perfect",
             "pic": "img/Sonata-HA-2.7-perfect-1.6ml.jpg",
             "value": "1.6 ml",
             "price": 1300,
@@ -131,7 +131,7 @@
         },
         {
             "id": 15,
-            "name": "MESO-F HyalDeep 3.2%  ",
+            "name": "MESO-F HyalDeep 3.2%",
             "pic": "img/MESO-F-HyalDeep-3.2-6ml.jpg",
             "value": "6 ml",
             "price": 2850,
@@ -247,7 +247,7 @@
         "products": [
         {
             "id": 27,
-            "name": "Sonata Derma Activ E ",
+            "name": "Sonata Derma Activ E",
             "pic": "img/Sonata Derma Activ E 6ml.jpg",
             "value": "6 ml",
             "price": 900,
@@ -256,7 +256,7 @@
         },
         {
             "id": 28,
-            "name": "Sonata Derma Activ F ",
+            "name": "Sonata Derma Activ F",
             "pic": "img/Sonata Derma Activ F 6ml.jpg",
             "value": "6 ml",
             "price": 900,
