@@ -42,7 +42,7 @@ html
 						p.hero__subtext Осенняя супер акция на остатки препаратов из прошлой поставки. Срок годности на все товары от 1 года! (минимальный до декабря 2020 года) Лучшие цены от официального представителя марок Meso-F (Швейцария) и Sonata (Израиль).
 			section.discountText
 				.container
-					p Акция с 11.10.19 по 25.11.19
+					p Акция с 11.10.19 по 25.10.19
 					p Офис в Москве, доставка по всей России. Защита от контрафакта. 
 					p Оплата нал/безнал - официально, с чеками и документами. 
 			section.case
@@ -54,7 +54,6 @@ html
 						.case__list
 			section.forms
 				.container
-					p.forms__response
 					.forms__inner
 						.forms__item
 							form(action="", method="post").form#callback
@@ -64,6 +63,7 @@ html
 								.form__group
 									input(type="tel", name="phone", placeholder="Телефон *", required)
 								input(type="hidden", name="form", value="callback")
+								p.form__response
 								button.form__submit Отправить
 						.forms__item
 							form(action="", method="post").form#order
@@ -87,6 +87,8 @@ html
 										.order__total Итого: 
 											span.js-total 
 											| ,00 р.
+								
+								p.form__response
 								button.form__submit Отправить
 			footer.footer
 				.container

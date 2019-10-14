@@ -333,8 +333,7 @@ var Shop = {
         var formId = $(e.target).closest('form').attr('id');
 
         if (formId === 'order') {
-
-            basket.length > 0 && ajax($('#order'))
+            basket.length > 0 ? ajax($('#order')) : addNotify('error', 'Список покупок пуст', $('#order').find('.form__response'));
         } else {
             ajax($('#callback'))
         }
@@ -369,16 +368,16 @@ var ajax = function(form) {
             reachGoal(formid);
         }
 
-        addNotify(status, message)
+        addNotify(status, message, $('#' + formid).find('.form__response'))
     }
+}
 
-    var addNotify = function(status, msg, form) {
-        var responseEl = $('.forms__response').removeClass('success error').addClass(status).text(msg);
+var addNotify = function(status, msg, el) {
+    var responseEl = $(el).removeClass('success error').addClass(status).text(msg);
 
-        responseEl.slideDown();
+    responseEl.slideDown();
 
-        status === 'success' && Shop._clearBasket();
-    }
+    status === 'success' && Shop._clearBasket();
 }
 
 var reachGoal = function(id) {

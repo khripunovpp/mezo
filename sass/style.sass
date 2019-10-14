@@ -255,7 +255,7 @@ select
 	border-radius: 2px
 	border: 1px solid #dedede
 	background-color: #f3f3f3
-	padding: 3px
+	padding: 10px
 	font-size: 16px
 	font-weight: 400
 	font-family: $font
@@ -331,22 +331,6 @@ select
 	&__item
 		width: 50%	
 		margin: 0 20px
-	&__response
-		display: none
-		text-align: center
-		font-size: 18px
-		line-height: 1.2
-		margin: 0
-		padding: 15px
-		border: 1px solid transparent
-		&.error
-			border-color: #ff0000
-			color: #d42121
-			background-color: rgba(#d42121, .1)
-		&.success
-			border-color: #2ba32b
-			color: #2ba32b
-			background-color: rgba(#2ba32b, .1)
 
 .form
 	&__title
@@ -389,6 +373,22 @@ select
 			background-color: #762687
 	&__order
 		margin-top: 15px
+	&__response
+		display: none
+		text-align: center
+		font-size: 18px
+		line-height: 1.2
+		margin: 15px 0 0 
+		padding: 15px
+		border: 1px solid transparent
+		&.error
+			border-color: #ff0000
+			color: #d42121
+			background-color: rgba(#d42121, .1)
+		&.success
+			border-color: #2ba32b
+			color: #2ba32b
+			background-color: rgba(#2ba32b, .1)
 
 .order
 	color: #242424

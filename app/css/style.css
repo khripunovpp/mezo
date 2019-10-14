@@ -343,7 +343,7 @@ select {
   border-radius: 2px;
   border: 1px solid #dedede;
   background-color: #f3f3f3;
-  padding: 3px;
+  padding: 10px;
   font-size: 16px;
   font-weight: 400;
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
@@ -460,28 +460,6 @@ select {
   margin: 0 20px;
 }
 
-.forms__response {
-  display: none;
-  text-align: center;
-  font-size: 18px;
-  line-height: 1.2;
-  margin: 0;
-  padding: 15px;
-  border: 1px solid transparent;
-}
-
-.forms__response.error {
-  border-color: #ff0000;
-  color: #d42121;
-  background-color: rgba(212, 33, 33, 0.1);
-}
-
-.forms__response.success {
-  border-color: #2ba32b;
-  color: #2ba32b;
-  background-color: rgba(43, 163, 43, 0.1);
-}
-
 .form__title {
   font-size: 24px;
   line-height: 32px;
@@ -534,6 +512,28 @@ select {
 
 .form__order {
   margin-top: 15px;
+}
+
+.form__response {
+  display: none;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.2;
+  margin: 15px 0 0;
+  padding: 15px;
+  border: 1px solid transparent;
+}
+
+.form__response.error {
+  border-color: #ff0000;
+  color: #d42121;
+  background-color: rgba(212, 33, 33, 0.1);
+}
+
+.form__response.success {
+  border-color: #2ba32b;
+  color: #2ba32b;
+  background-color: rgba(43, 163, 43, 0.1);
 }
 
 .order {
