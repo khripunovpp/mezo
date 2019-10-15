@@ -208,6 +208,7 @@ var Shop = {
             quantity: productCard.find('[name="quantity"]').val() || "1",
             name: productData.name,
             price: productData.price,
+            value: productData.value
         };
 
         _t._addBasket(item);
@@ -279,7 +280,7 @@ var Shop = {
 
         function renderBasketItem(elem) {
 
-            var productString = elem.name + ' x' + elem.quantity;
+            var productString = elem.name + ' (' + elem.value +') x' + elem.quantity;
             var prodItem = $('<p>').addClass('order__item').text(productString).append($('<button data-delete-id="' + elem.id + '">').addClass('order__delete').text('Удалить'))
 
             totalPrice += Number(elem.quantity * elem.price)
