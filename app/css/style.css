@@ -232,7 +232,7 @@ select {
 }
 
 .hero__text {
-  max-width: 300px;
+  max-width: 400px;
   font-size: 22px;
   line-height: 29px;
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
