@@ -161,7 +161,8 @@ var Shop = {
                 productPic = $('<a href="#">').addClass('product__pic').append($('<img>').attr('src', el.pic)),
                 productName = $('<p>').addClass('product__name').text(el.name).attr('title', el.name),
                 productValue = $('<p>').addClass('product__value').text(el.value),
-                productPrice = $('<p>').addClass('product__price').text(el.price + ",00 р."),
+                price = el.price ? el.price + ",00 р." : "По запросу"
+            productPrice = $('<p>').addClass('product__price').text(price),
                 productQunatityEl = $('<span>').addClass('product__quantity').append($('<input type="text" name="quantity" value="1">')).append($('<span>шт.</span>')),
                 productButtonAdd = $('<button>').addClass('product__add').text("Добавить в корзину");
 
@@ -205,14 +206,13 @@ var Shop = {
 
         var item = {
             id: productData.id,
-            quantity: productCard.find('[name="quantity"]').val() || "1",
+            quantity: Number(productCard.find('[name="quantity"]').val()) || 1,
             name: productData.name,
-            price: productData.price,
+            price: Number(productData.price) || 0,
             value: productData.value
         };
 
         _t._addBasket(item);
-
     },
     _addBasket: function(prod) {
         var _t = this;
@@ -280,7 +280,7 @@ var Shop = {
 
         function renderBasketItem(elem) {
 
-            var productString = elem.name + ' (' + elem.value +') x' + elem.quantity;
+            var productString = elem.name + ' (' + elem.value + ') x' + elem.quantity;
             var prodItem = $('<p>').addClass('order__item').text(productString).append($('<button data-delete-id="' + elem.id + '">').addClass('order__delete').text('Удалить'))
 
             totalPrice += Number(elem.quantity * elem.price)
@@ -309,7 +309,8 @@ var Shop = {
             $('.card__name').text(product.name);
             $('.card__subname').text(product.subname);
             $('.card__value').text(product.value);
-            $('.card__price').text(product.price + ',00 р.');
+            var price = product.price ? product.price + ",00 р." : "По запросу";
+            $('.card__price').text(price);
             $('.card__contains').html(product.contains);
             $('.card__tail').html(product.content);
             $('.card__add').attr('data-id', product.id).text('Добавить в корзину').removeClass('js-to-basket');
